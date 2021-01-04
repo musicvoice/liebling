@@ -202,6 +202,7 @@ into the {body} of the default.hbs template --}}
           </section>
         --}}
       {{/post}}
+      {{> "banner-random"}}
       {{!-- Related posts --}}
       {{#if post.tags.length}}
         {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
