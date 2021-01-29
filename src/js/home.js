@@ -16,6 +16,7 @@ $(document).ready(() => {
       type: 'slider',
       rewind: false,
       gap: 0,
+      autoplay: 2000, // or any other amount of miliseconds
       swipeThreshold: false,
       dragThreshold: false,
       direction: isRTL() ? 'rtl' : 'ltr',
